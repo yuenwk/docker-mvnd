@@ -1,7 +1,7 @@
 FROM eclipse-temurin:17-jdk-alpine
 
 # 镜像
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 RUN apk add --no-cache bash procps curl tar gcompat
 
 # common for all images
